@@ -1,0 +1,44 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: mfcie - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x409 /fo"Debug/mfcie.res" /d "_DEBUG" /d "_AFXDLL" "C:\samples\VC98\mfc\internet\mfcie\mfcie.rc"" 
+Creating temporary file "C:\Users\spygg\AppData\Local\Temp\RSPCFB1.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /Fp"Debug/mfcie.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /c 
+"C:\samples\VC98\mfc\internet\mfcie\MainFrm.cpp"
+"C:\samples\VC98\mfc\internet\mfcie\mfcie.cpp"
+"C:\samples\VC98\mfc\internet\mfcie\mfcieDoc.cpp"
+"C:\samples\VC98\mfc\internet\mfcie\mfcieVw.cpp"
+]
+Creating command line "cl.exe @C:\Users\spygg\AppData\Local\Temp\RSPCFB1.tmp" 
+Creating temporary file "C:\Users\spygg\AppData\Local\Temp\RSPCFB2.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /Fp"Debug/mfcie.pch" /Yc"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /c 
+"C:\samples\VC98\mfc\internet\mfcie\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\Users\spygg\AppData\Local\Temp\RSPCFB2.tmp" 
+Creating command line "link.exe /nologo /subsystem:windows /incremental:yes /pdb:"Debug/mfcie.pdb" /debug /machine:I386 /out:"Debug/mfcie.exe" /pdbtype:sept  .\Debug\MainFrm.obj .\Debug\mfcie.obj .\Debug\mfcieDoc.obj .\Debug\mfcieVw.obj .\Debug\StdAfx.obj .\Debug\mfcie.res "
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+MainFrm.cpp
+mfcie.cpp
+mfcieDoc.cpp
+mfcieVw.cpp
+Generating Code...
+Linking...
+
+
+
+<h3>Results</h3>
+mfcie.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

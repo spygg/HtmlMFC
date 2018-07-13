@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+</head>
+<body>
+   <div class="wrap">
+   	<div class="conLeft">
+        
+      </div>  			
+		
+		<div class="conRight" id="conRight">
+         <div class="conTop">            
+            <ul class="conNav" id="conNav">
+               <li class="conLis high">STATUS</li>
+               <li class="conLis">MONITOR</li>
+               <li class="conLis">PAY</li>
+               <li class="conLis">DISCOVER</li>
+               <li class="conLis">SETTING</li>
+               <li class="highStrip" id="highStrip"></li>
+            </ul>
+            <div class="headerDrive"></div>
+            <div class="TransferCaption"></div>
+         </div>
+         <div class="contentBox" id="contentBox">
+            <div class="content statuaBox">
+               <div class="linerBox">
+                  <div class="lineTit">USAGE(MB)</div>
+                  <div class="dayBtn timeBtn high" name="1" id="dayBtn">日</div>
+                  <div class="weekBtn timeBtn" name="2" id="weekBtn">周</div>
+                  <!-- <div class="monthBtn timeBtn" name="3" id="monthBtn">YEAR</div> -->
+                  <div class="linerCanvas" id="linerCanvas"></div>
+                  <p class="prevBtn" id="prevBtn"></p>
+                  <p class="nextBtn" id="nextBtn"></p>
+               </div>
+               <div class="pieBox">
+                  <div class="pieCanvas" id="pieCanvas"></div>
+               </div>
+               
+            </div>
+            <div class="content monitorBox">
+               <!-- <div class="monitorNav" id="monitorNav">
+                  <p class="monitorNavLis high">Mon</p>
+                  <p class="monitorNavLis">Tues</p>
+                  <p class="monitorNavLis">Wed</p>
+                  <p class="monitorNavLis">Thur</p>
+                  <p class="monitorNavLis">Fri</p>
+                  <p class="monitorNavLis">Sat</p>
+                  <p class="monitorNavLis">Sun</p>
+               </div> -->
+               <div class="monitorListBox" >
+                  <ul>  
+                        <li class="monitorlis">
+                              <span class="center">名称</span>
+                              <span>安全等级</span>
+                              <span>下载速度</span>
+                              <span>上传速度</span>
+                              <span>限制下载</span>
+                              <span>限制上传</span>
+                              <span>已下载流量</span>
+                              <span>已上传流量</span>
+                              <span>连接数</span>
+                              <span>管理</span>
+                        </li>
+                  </ul>
+                  <ul class="monitorList" id="monitorList">  
+                       
+                        <!--<li class="monitorlis">
+                              <span>360tray.exe</span>
+                              <span>检测中</span>
+                              <span>未开启</span>
+                              <span>未开启</span>
+                              <span>未开启</span>
+                              <span>未开启</span>
+                              <span>未开启</span>
+                              <span>未开启</span>
+                              <span>9</span>
+                              <span class="manage"></span>
+                        </li>
+                        <li class="monitorlis">
+                              <span>360se.exe</span>
+                              <span>安全</span>
+                              <span>0KB/s</span>
+                              <span>0KB/s</span>
+                              <span class="limitBox">无限制<input type="text" class="limitTraffic"><i class="limitEdit"></i></span>
+                              <span>无限制</span>
+                              <span>32.8MB</span>
+                              <span>42.2MB</span>
+                              <span>2</span>
+                              <span>管理</span>
+                        </li>-->
+                     
+                  </ul>
+               </div>
+            </div>
+            <div class="content payBox bgwhite">
+               <h1>ICCID</h1>
+               <h2 class="iccId" id="iccId">XXXXXX 0MFSS YYGXX XXXXX</h2>
+               <div class="payWay" id="payWay">
+                  <div class="payWayBox" id="payWayBox">
+                     
+                  </div>
+               </div>
+               <div class="selectPay">
+                  <p class="curSelectPay"><span class="curSelectPayNum" id="curSelectPayNum">120</span>元</p>
+                  <p class="payBtn">去充值</p>
+               </div>
+            </div>
+            <div class="content discoverBox bgwhite" id="discoverBox">
+               <dl>
+                  <dt>
+                     <span>联想笔记本</span>
+                     <span class="payConInfo" title="联想(Lenovo)小新Air 12.2英寸13.4mm超轻薄笔记本电脑(6Y30 4G 128G SSD IPS FHD WIN10 WiFi)金">联想(Lenovo)小新Air 12.2英寸13.4mm超轻薄笔记本电脑(6Y30 4G 128G SSD IPS FHD WIN10 WiFi)金</span>
+                     <a class="payViewdetails" target="_blank" href="https://item.jd.com/3178510.html">查看详情</a>
+                  </dt>
+                  <dd>
+                     <img class="payImg" src="images/1.jpg">
+                  </dd>
+               </dl>
+               <dl>
+                  <dt>
+                     <span>联想笔记本</span>
+                     <span class="payConInfo" title="联想（Lenovo）Tab3 Plus TB-7703 7英寸安卓6.0通话平板电脑 7703N（通话版）白色">联想（Lenovo）Tab3 Plus TB-7703 7英寸安卓6.0通话平板电脑 7703N（通话版）白色</span>
+                     <a class="payViewdetails" target="_blank" href="https://item.jd.com/3178510.html">查看详情</a>
+                  </dt>
+                  <dd>
+                     <img class="payImg" src="images/2.jpg">
+                  </dd>
+               </dl>
+               <dl>
+                  <dt>
+                     <span>联想笔记本</span>
+                     <span class="payConInfo" title="联想 Miix5 尊享版二合一平板电脑12.2英寸（i5-6200U 8G内存/256G/Win10 内含键盘/触控笔/Office)闪电银">联想 Miix5 尊享版二合一平板电脑12.2英寸（i5-6200U 8G内存/256G/Win10 内含键盘/触控笔/Office)闪电银</span>
+                     <a class="payViewdetails" target="_blank" href="https://item.jd.com/3178510.html">查看详情</a>
+                  </dt>
+                  <dd>
+                     <img class="payImg" src="images/3.jpg">
+                  </dd>
+               </dl>
+               <dl>
+                  <dt>
+                     <span>联想笔记本</span>
+                     <span class="payConInfo" title="联想(Lenovo)小新Air 12.2英寸13.4mm超轻薄笔记本电脑(6Y30 4G 128G SSD IPS FHD WIN10 WiFi)金">联想(Lenovo)小新Air 12.2英寸13.4mm超轻薄笔记本电脑(6Y30 4G 128G SSD IPS FHD WIN10 WiFi)金</span>
+                     <a class="payViewdetails" target="_blank" href="https://item.jd.com/3178510.html">查看详情</a>
+                  </dt>
+                  <dd>
+                     <img class="payImg" src="images/1.jpg">
+                  </dd>
+               </dl>
+            </div>
+            <div class="content settingBox bgwhite">
+               <div class="setlimit">
+                  <div class="displayStatus">
+                     <p>显示流量球状态</p>
+                     <select>
+                        <option>显示</option>
+                        <option>不显示</option>
+                     </select>
+                  </div>
+                  <div class="displayStatus">
+                     <p>每日使用流量上线提醒</p>
+                     <select>
+                        <option>不提醒</option>
+                        <option>每月</option>
+                     </select>
+                  </div>
+               </div>
+               <div class="setlimit padding20">
+                  <div class="trafficState">
+                     <p>
+                        <span>移动热点</span>
+                        <span>开启移动热点后，其他设备可以使用您的手机网络上网</span>
+                     </p>
+                     <a href="" target="_blank" class="setBtn">设置</a>
+                  </div>
+                  <div class="trafficState">
+                     <p>
+                        <span class="lineHeight80">当前版本 2.00.2004</span>
+                     </p>
+                     <a href="" target="_blank" class="setBtn">检查更新</a>
+                  </div>
+               </div>
+               <p class="exitBtn outAndexitBtn">注销并退出</p>
+               <p class="exitBtn">退出</p>
+            </div>
+         </div>
+		</div>	
+      <div class="conBtn" id="conBtn">
+         <div class="minimizeBtn" id="minimizeBtn"></div>
+         <div class="closeBtn" id="closeBtn"></div>
+      </div>
+      <div class="slideIn" id="slideIn"></div>
+   </div>
+
+</body>
+<script src="js/lib/jquery.js"></script>
+<script src="js/lib/echarts.common.min.js "></script>
+<script type="text/javascript" src="js/index.js"></script> 
+<script type="text/javascript" src="js/mfcCalljs.js"></script>
+<script type="text/javascript" src="js/statusLine.js"></script> 
+<script type="text/javascript" src="js/statusPie.js"></script>
+
+      
+
+</html>

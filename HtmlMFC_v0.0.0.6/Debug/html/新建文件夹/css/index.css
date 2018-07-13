@@ -1,0 +1,615 @@
+*{
+	margin:0;
+	padding:0;
+	font-family: "Microsoft YaHei";	
+	font-size: 12px;
+}
+input, textarea, select {
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    outline: none;
+}
+ul, ol ,li { list-style: none; }
+.boxSizing{
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-ms-box-sizing:border-box;
+	-o-box-sizing:border-box;
+	box-sizing:border-box;
+}
+body{
+	position: relative;
+}
+.floatL{
+	float: left;
+}
+.floatR{
+	float: right;
+}
+.wrap{
+	position: absolute;
+    left: 0;
+    top: 0;
+    width: 960px;
+    height: 630px;
+    border: 1px solid #141423;
+    overflow: hidden;
+}
+
+.conLeft{
+	width: 300px;
+	height: 630px;
+	background: url("../images/left.png") ;
+	background-size: auto 100%;
+	float: left;
+	position: relative;
+}
+
+
+.conRight{
+	width: 660px;
+	height: 630px;
+	float: right;
+	background: #eef2f5;
+	overflow: hidden;
+	position: relative;
+}
+.TransferCaption{
+	width: 180px;
+    height: 41px;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+}
+.headerDrive{
+	width: 579px;
+    height: 34px;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+.conTop{
+	width: 100%;
+	height: 68px;
+	background: #fff;
+	position: relative;
+}
+.conBtn{
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+.conNav{
+	position: absolute;
+	left: 0;
+	bottom: 0;
+}
+.minimizeBtn,
+.closeBtn{
+	width: 14px;
+	height: 14px;
+	display: inline-block;
+	background-image: url("../images/minimize2.png");
+	margin: 10px;
+}
+.closeBtn{
+	background-image: url("../images/close2.png");
+	margin-right: 20px;
+}
+.conLis{
+	display: inline-block;
+	margin: 15px 20px;
+	color: #a9aeb3;
+	font-size: 13px;
+	font-weight: bold;
+}
+.conLis.high,
+.conLis:hover{
+	color: #1d93f4;
+}
+.highStrip{
+	width: 20px;
+	height: 3px;
+	border-radius: 14px;
+	background: #1d93f4;
+	box-shadow: 0 0 14px #91cdff;  
+	position: absolute;
+	left: 35px;
+	bottom: 0;
+
+}
+.contentBox{
+	width: 624px;
+	height:526px;
+	margin: 18px;
+	overflow: hidden;
+}
+.content{
+	width: 100%;
+	height: 100%;
+}
+.statuaBox{
+	overflow: auto;
+}
+/*.statuaBox::-webkit-scrollbar,
+.monitorListBox::-webkit-scrollbar{
+    display: none;
+}*/
+.linerBox{
+	width: 100%;
+	height: 300px;
+	background: #fff!important;
+	margin-bottom: 18px;
+	position: relative;
+}
+.linerCanvas{
+	width: 100%;
+	height: 300px;
+}
+.prevBtn{
+	width: 20px;
+	height: 30px;
+	background:  url('../images/prev.png') no-repeat center center;
+	position: absolute;
+	left: 14px;
+	bottom: 15px;
+}
+.nextBtn{
+	width: 20px;
+	height: 30px;
+	background:  url('../images/next.png') no-repeat center center;
+	position: absolute;
+	right: 14px;
+	bottom: 15px;
+}
+.prevBtn:hover{
+	background-image:  url('../images/prevHigh.png') ;
+}
+.nextBtn:hover{
+	background-image:  url('../images/nextHigh.png') ;
+}
+.lineTit{
+	position: absolute;
+	left: 20px;
+	top: 20px;
+}
+.timeBtn{
+	height: 30px;
+	line-height: 30px;
+	padding: 0 15px;
+	font-size: 12px;
+	border: 1px solid #f7f8fb;
+	border-radius: 46px; 
+	color: #a9aeb3;
+	position: absolute;
+	top: 12px;
+	z-index: 999;
+}
+.timeBtn.high{
+	background: #1d93f4;
+	color: #fff;
+}
+.weekBtn{
+	right: 20px;
+}
+.dayBtn{
+	right: 84px;
+}
+/*.monthBtn{
+	right: 20px;
+}
+.weekBtn{
+	right: 84px;
+}
+.dayBtn{
+	right: 148px;
+}*/
+.pieBox{
+	width: 100%;
+	height: 208px;
+	background: #fff;
+}
+.pieCanvas{
+	width: 70%;
+    height: 100%;
+    margin-left: 20px;
+}
+.monitorNav{
+	width: 100%;
+	height: 40px;
+	background:  #fff;
+	border-bottom: 1px solid #1d93f4;
+	
+}
+.monitorListBox{
+	width: 100%;
+	height: 485px;
+	overflow-y: auto;
+	background:  #fff;
+	scrollbar-face-color:#eee; /*图5,立体滚动条的颜色*/
+	scrollbar-shadow-color:#fff; /*图3,立体滚动条阴影的颜色*/
+	scrollbar-track-color:#fff; /*图7,立体滚动条背景颜色*/
+	scrollbar-arrow-color:#fff;
+}  
+.monitorNavLis{
+	float: left;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	color: #b0b5b9;
+	padding: 0 15px;
+}
+.monitorNavLis:hover,
+.monitorNavLis.high{
+	background: #1d93f4;
+	color: #fff;
+}
+.monitorList{
+	
+	overflow-y: auto;
+}
+.bold{
+	font-weight: bold;
+}
+.center{
+	text-align: center!important;
+}
+.monitorlis{
+	width: 100%;
+	height: 30px;
+	line-height: 30px;
+	border-bottom: 1px solid #eef2f5;
+}
+.monitorlis span{
+	display: block;
+	float: left;
+	text-align: center;
+	font-size: 10px;
+	color: #252439;
+	position: relative;
+}
+.monitorlis span.manage{
+	width: 6%;
+	height: 30px;
+	background: url('../images/manage.png') no-repeat center center;
+
+}
+.monitorlis span:nth-child(1){
+	width: 20%;
+	text-align: left;
+	text-indent: 5px;
+}
+.monitorlis span:nth-child(2),
+.monitorlis span:nth-child(3),
+.monitorlis span:nth-child(4),
+.monitorlis span:nth-child(5),
+.monitorlis span:nth-child(6)
+{
+	width: 9%;
+}
+.monitorlis span:nth-child(7),
+.monitorlis span:nth-child(8){
+	width: 11%;
+}
+.monitorlis span:nth-child(9){
+	width: 7%;
+}
+.monitorlis span:nth-child(10){
+	width: 6%;
+}
+.limitTraffic{
+	width: 32px;
+    height: 12px;
+    position: absolute;
+    left: 3px;
+    top: 7px;
+	display: none;
+}
+.limitTraffic+input{
+	vertical-align: middle;
+}
+.limitEdit{
+	display: inline-block;
+	width: 15px;
+	height: 10px;
+	background: url('../images/edit.png') no-repeat center center;
+}
+.slideIn{
+	width: 15px;
+	height: 80px;
+	line-height: 80px;
+	text-align: center;
+	background: #575770 url('../images/left-arrow.png') no-repeat center center;
+	font-size: 16px;
+	color: #fff;
+	font-weight: bold;
+	border-top-left-radius: 20px;
+	border-bottom-left-radius: 20px;
+	position: absolute;
+	right: 661px;
+	top: 275px;
+	opacity: 0.6;
+}
+.slideIn:hover{	
+	background-color: #1f1f34;	
+}
+.slideInLeft{
+	right: 661px;
+	background-position-x: -6px;
+	background-image: url('../images/right-arrow.png');
+}
+.slideInRight{
+	right: 1px;
+	background-image: url('../images/left-arrow.png');
+}
+.bgwhite{
+	background: #fff;
+}
+/*-----pay start-------*/
+.payBox h1{
+	width: 100%;
+	height: 60px;
+	font-size: 22px;
+	font-weight: normal;
+	color: #c2c6c9;
+	line-height: 100px;
+	text-indent: 20px;
+}
+.iccId{
+	width: 584px;
+	height:122px;
+	font-size: 24px;
+	color: #c2c6c9;
+	line-height:122px;
+	margin: 0 20px;
+	border-bottom: 1px solid #eef2f5;
+}
+.payWay{
+	width: 584px;
+	padding: 50px 0;
+	margin: 0 20px;
+	overflow: auto;
+
+}
+.payWayBox{
+	width: 728px;
+	height: 104px;
+}
+.payWayBox:after{
+	clear: both;
+}
+.pay{
+	float: left;
+	width: 150px;
+    height: 102px;
+	background: #77bcf5;
+	border:1px solid #77bcf5;
+	border-radius: 10px; 
+	margin: 0 15px;
+	position: relative;
+}
+.pay.border{
+	border: 1px solid #1d93f4;
+}
+.pay input{
+	width: 100%;
+    height: 100%;
+    opacity: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 10;
+}
+.pay label{
+	width: 30px;
+	height: 30px;
+	background: url('../images/right.png') no-repeat;
+	position: absolute;
+	right:-1px;
+	top: -1px;
+	z-index: 9;
+	display: none;
+}
+/*[type="radio"] + label{
+    display: none;
+}
+[type="radio"]:checked + label{
+    display: block;
+}*/
+.payInfo{
+	position: absolute;
+	
+	color: #fff;
+
+}
+.price{
+	left: 3px;
+	top: 3px;
+	font-size: 14px;
+}
+.favorable{
+	width: 80px;
+	height: 25px;
+	right: 7px;
+    top: -1px;
+	line-height: 22px;
+	text-align: center;
+	background: url('../images/favorable.png') no-repeat;
+}
+.preferentialPolicy{
+	bottom: 5px;
+	left: 10px;
+}
+.paySize{
+	right: 14px;
+	bottom: 20px;
+	font-size: 22px;
+	font-weight: bold;
+}
+.validityPeriod{
+	bottom: 5px;
+	right: 14px;
+	font-size: 10px;
+}
+.selectPay{
+	width: 100%;
+	position: relative;
+}
+.curSelectPay{
+	position: absolute;
+	left: 20px;
+	top: 35px;
+	color: #b7bcc0;
+}
+.curSelectPayNum{
+	color: #1d94f4;
+	font-size: 33px;
+	font-weight: bold;
+	margin-right: 5px;
+}
+.payBtn{
+	height: 32px;
+	line-height: 32px;
+    padding: 0 25px;
+    font-size: 12px;
+    border-radius: 46px;
+    background: #1d93f4;
+    color: #fff;
+	position: absolute;
+	right: 20px;
+	top: 45px;
+}
+/*-----pay end-------*/
+
+/*-----discover start-------*/
+.discoverBox dl{
+	width: 50%;
+	height: 174px;
+	float: left;
+	border-bottom: 1px solid #eef2f5;
+	border-right: 1px solid #eef2f5;
+	padding: 15px;
+	-ms-box-sizing:border-box;
+	box-sizing:border-box;
+}
+.discoverBox dl:nth-child(even){
+	border-right: none;
+}
+.discoverBox dl dt{
+	width: 40%;
+	height: 100%;
+	float: left;
+}
+.discoverBox dl dt span{
+	display: block;
+	color: #c2c6c9;
+	line-height: 24px;
+}
+.discoverBox dl dt span.payConInfo{
+	width: 100%;
+	height: 55px;
+	overflow: hidden;
+	margin-bottom: 30px;
+}
+.discoverBox dl dd{
+	width: 50%;
+	height: 100%;
+	float: right;
+}
+.payViewdetails{
+	display: block;
+	width: 80px;
+	height: 26px;
+    line-height: 26px;
+    text-align: center;
+    font-size: 12px;
+    background: #1d93f4;
+    color: #fff;
+    border-radius: 46px;
+    text-decoration: none;
+}
+/*-----discover end-------*/
+
+/*-----setting start-------*/
+.settingBox{
+	position: relative;
+}
+.setlimit{
+	width: 594px;
+	margin: 0 15px;
+	border-bottom: 1px solid #eef2f5;
+	padding: 35px 0;
+}
+.padding20{
+	padding: 20px 0;
+}
+.displayStatus{
+	height: 60px;
+}
+.displayStatus p{
+	width: 214px;
+	height: 60px;
+	line-height: 60px;
+	font-size: 16px;
+	color: #1d93f4;
+	float: left;
+}
+.displayStatus select{
+	float: left;
+	width: 124px;
+	height: 30px;
+	margin-top: 15px;
+}
+.trafficState{
+	height: 90px;
+}
+.trafficState p{
+	width: 314px;
+	height: 90px;
+	line-height: 32px;
+	font-size: 16px;
+	color: #1d93f4;
+	float: left;
+}
+.trafficState p span{
+	display: block;
+}
+.trafficState p span:nth-child(1){
+	font-size: 16px;
+    font-weight: bold;
+}
+.lineHeight80{
+	line-height: 90px;
+}
+.trafficState a{
+	display: block;
+	float: right;
+	width: 100px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	margin-top: 30px;
+    font-size: 12px;
+    background: #1d93f4;
+    color: #fff;
+    border-radius: 46px;
+    text-decoration: none;
+}
+.exitBtn{
+	width: 100px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+    font-size: 12px;
+    background: #1d93f4;
+    color: #fff;
+    border-radius: 46px;
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+}
+.outAndexitBtn{
+	right: 140px;
+}
+/*-----setting end-------*/

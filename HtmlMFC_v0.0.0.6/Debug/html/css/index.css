@@ -1,0 +1,75 @@
+html{
+
+	overflow: hidden;
+	/*overflow: visible;*/
+}
+
+body{
+	background-color: #eee;
+	position: relative;
+/*	    width: 960px;
+    height: 30px;*/
+}
+
+
+*{
+	margin:0;
+	padding:0;
+	font-family: "Microsoft YaHei";	
+	font-size: 12px;
+}
+input, textarea, select {
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    outline: none;
+}
+ul, ol ,li { list-style: none; }
+.boxSizing{
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-ms-box-sizing:border-box;
+	-o-box-sizing:border-box;
+	box-sizing:border-box;
+}
+
+.contatiner{
+	position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 960px;
+    height: 30px;
+    border: 1px solid #141423;
+
+    /*overflow: hidden;*/
+}
+
+#caption-area{
+	
+	background-color: #ff0000;
+	width: 960px;
+	height: 30px;
+
+}
+#caption{
+	cursor: default;
+	float: left;
+	padding-top: 5px;
+	padding-left: 15px;
+	
+}
+
+#title-area{
+	float: right;
+}
+
+
+.imghack{
+
+	color: #0000ff;
+	height: 60px;
+	background: url('c02.png') no-repeat;
+	_background:none;
+	_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="./c02.png");
+
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html >
+
+ <!-- oncontextmenu="window.event.returnValue=false" -->
+<html oncontextmenu="window.event.returnValue=false">
+	<head>
+        <meta charset="UTF-8">
+		<title>Demo</title>
+		<link rel="stylesheet" type="text/css" href="demo.css">
+		
+	</head>
+
+	<body>
+		<div class="contatiner">
+		
+			<div id="caption-area" onmousedown="MoveWindowPos(window.event)">
+				<div id="caption">
+					Hello MFC from Html
+				</div>
+				<div id="title-area">
+					<input type="button" onclick="MinWindow()" value="_" />
+					<input type="button" onclick="MaxWindow()" value="口" />
+			        <input type="button" onclick="CloseWindow()" value="x" />
+				</div>
+			</div>
+		</div>
+
+
+
+
+
+
+
+        <script type="text/javascript" src="demo.js"></script>
+	</body>
+</html>
